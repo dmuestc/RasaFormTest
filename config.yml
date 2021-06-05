@@ -1,0 +1,19 @@
+# Configuration for Rasa NLU.
+# https://rasa.com//radocssa/nlu/components/
+language: zh
+
+pipeline:
+- name: "dialog.components.preprocessing.PreprocessAnalyzer"
+
+policies:
+- name: FallbackPolicy
+  fallback_action_name: "utter_default"
+  nlu_threshold: 0.6
+  core_threshold: 0.5
+- name: AugmentedMemoizationPolicy
+- name: FormPolicy
+- name: TEDPolicy
+  max_history: 5
+  epochs: 20
+  batch_size: 32
+- name: MappingPolicy

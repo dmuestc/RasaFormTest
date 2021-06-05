@@ -1,0 +1,54 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: false
+
+intents:
+- greet:
+    triggers: utter_greet
+- goodbye:
+    triggers: utter_goodbye
+- admission_letter
+- admission_result
+- default
+
+entities:
+- address
+- name
+- score
+- number
+
+slots:
+  address:
+    type: unfeaturized
+  name:
+    type: unfeaturized
+  score:
+    type: unfeaturized
+  number:
+    type: unfeaturized
+
+responses:
+  utter_greet:
+  - text: 您好
+  utter_goodbye:
+  - text: 再见
+  utter_ask_address:
+  - text: 你是哪个省的
+  utter_ask_name:
+  - text: 你的名字?
+  utter_ask_score:
+  - text: 高考成绩是多少
+  utter_ask_number:
+  - text: 考号是多少
+  utter_default:
+  - text: 我还在学习中，暂时不明白您的意思呢
+
+actions:
+- utter_greet
+- utter_goodbye
+- utter_default
+- action_slot_reset
+
+forms:
+- admission_letter_form 
+- admission_result_form

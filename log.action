@@ -1,0 +1,6 @@
+nohup: ignoring input
+2021-06-04 10:32:51 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+2021-06-04 10:32:51 INFO     rasa_sdk.executor  - Registered function for 'action_slot_reset'.
+2021-06-04 10:32:51 INFO     rasa_sdk.executor  - Registered function for 'admission_letter_form'.
+2021-06-04 10:32:51 INFO     rasa_sdk.executor  - Registered function for 'admission_result_form'.
+2021-06-04 10:32:51 INFO     rasa_sdk.endpoint  - Action endpoint is up and running on http://localhost:5050
