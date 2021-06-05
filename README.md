@@ -1,6 +1,6 @@
 # 查分小机器人
 
-# 脚本     
+## Rasa    
 sh action.sh 启动Action Server 
 
 sh train.sh 是训练NLU和CORE 
