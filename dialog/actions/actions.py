@@ -27,7 +27,7 @@ class AdmissionLetterForm(FormAction):
         self.letter_mapping = {
             '上海': '未寄出',
             '北京': '已寄出',
-            '四川': '7月7日寄出'
+            '江苏': '7月20日寄出'
         }
 
     def name(self) -> Text:
@@ -57,7 +57,7 @@ class AdmissionResultForm(FormAction):
     def __init__(self):
         self.enroll_result = {
             ('2033451871', '张三', '上海', '400'): '计算机专业',
-            ('2033451872', '李四', '北京', '500'): '土木工程专业',
+            ('2033451872', '李四', '北京', '500'): '土木专业',
             ('2033451873', '王五', '江苏', '600'): '师范专业',
         }
 
