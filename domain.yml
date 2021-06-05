@@ -41,7 +41,7 @@ responses:
   utter_ask_number:
   - text: 考号是多少
   utter_default:
-  - text: 我还在学习中，暂时不明白您的意思呢
+  - text: 我还在学习中，暂时不明白你的意思呢
 
 actions:
 - utter_greet
